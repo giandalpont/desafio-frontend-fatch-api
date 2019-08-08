@@ -1,0 +1,18 @@
+@import "normalize";
+@import "bootstrap";
+
+
+.error {
+    .btn { 
+        background-color: #ff0000; 
+        border-color: red;
+        color: green;
+    }
+    .inputUser {
+        border-color: red;
+    }
+}
+
+.mt4{
+    margin-top: 40px;
+}
