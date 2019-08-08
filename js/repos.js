@@ -1,11 +1,10 @@
 let repos = document.querySelector('#repos')
 let listRepos = repos.querySelector('.repos-list')
 
-function getRepositories(data){
-    fetch(`https://api.github.com/users/${userValue}/repos`)
+function getRepositories(data){    
+    fetch(`https://api.github.com/users/${data.login}/repos`)
     .then(response => response.json())
     .then(data => {
-        // console.log(data)
         var output
         data.forEach(function(rep){
             if(rep.name){

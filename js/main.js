@@ -2,9 +2,13 @@
 let btn = document.querySelector(".search");
 let list = document.querySelector("#list");
 
-let userValue = document.querySelector('input').value
+// console.log(userValue)
 
 btn.addEventListener("click", function() {
+    
+    var userValue = document.querySelector('#input').value
+
+    console.log(userValue)
     fetch(`https://api.github.com/users/${userValue}`)
     .then(response => response.json())
     .then(data => {
