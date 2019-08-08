@@ -5,7 +5,7 @@ function getRepositories(data){
     fetch(`https://api.github.com/users/${userValue}/repos`)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
         var output
         data.forEach(function(rep){
             if(rep.name){
@@ -17,7 +17,7 @@ function getRepositories(data){
     })
     .catch(error =>{
         $('.busca').addClass('error')
-        console.error(error)
+        // console.error(error)
     })
     
 }

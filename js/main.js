@@ -8,7 +8,7 @@ btn.addEventListener("click", function() {
     fetch(`https://api.github.com/users/${userValue}`)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
+        // console.log(data)
         
         getUser(data)
         getRepositories(data)
